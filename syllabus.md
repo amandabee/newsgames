@@ -10,13 +10,10 @@ tl;dr:
 
 | Week     | Date   | In Class                   | Homework Due         |
 |----------|--------|----------------------------|----------------------|
-| 1        | Oct 10 | What is a "newsgame"?      | See email            |
-|          |        | FTP, Bingo                 |                      |
+| 1        | Oct 10 | What is a "newsgame"?  FTP, Bingo      | See email            |
 | no class | Oct 17 |                            |                      |
 | 2        | Oct 24 | Game play and Storytelling | Paper Prototypes,    |
-|          |        |                            |                      |
-| 3        | Oct 31 | Simple Interactions        | Revised Prototypes,  |
-|          |        |                            | Draft Texts          |
+| 3        | Oct 31 | Simple Interactions        | Revised Prototypes, Draft texts  |
 | 4        | Nov 7  | Working Wireframes         | Final texts          |
 | 5        | Nov 14 | Playable Demos             | Finished game        |
 
@@ -54,16 +51,17 @@ Amanda Hickman managed development of a series of games about public policy issu
 Amanda helped launch The New York World, and was program director at DocumentCloud, a Knight News Challenge funded project that reporters around the world are using to analyze, annotate, and publish primary source documents.
 
 **Office Hours**
-Wednesday and Thursday 12-2
-Tuesday after 2 by advance appointment
-http://piratepad.net/amandahickman
+Wednesday and Thursday 12-2   
+Tuesday after 2 by advance appointment   
+http://piratepad.net/amandahickman   
 
+## Structure
 
 You will work in small groups to design and build interactive and engaging news games that tell a substantive story well and get readers interested in an issue. 
 
 They’ll develop a pitch, an offline game prototype, and then a working online game, stopping along the way to make sure the game is still about the news story that sparked it.
 
-##Week-by-Week
+### Week-by-Week
  
 Class 1: What makes a news game newsworthy?
 Evaluate existing games, discuss your game ideas and break into small groups to start working out how ideas might play out as games. 
