@@ -1,6 +1,3 @@
-[ ] I have my Digital Storage password
-[ ] I tweaked a bingo card
-[ ] I know how to find the URL of a file on digital storage
 
 
 
@@ -18,3 +15,7 @@ http://www.codecademy.com/courses/javascript-beginner-en-x9DnD/0/1?curriculum_id
 
 Using Tabletop:
 http://www.mikeball.us/blog/using-google-spreadsheets-and-tabletop-js-as-a-web-application-back-end
+
+
+Here's one flowchart we can play with:
+https://twitter.com/holmesdm/status/393090781038125056/photo/1
