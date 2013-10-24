@@ -1,3 +1,5 @@
+# Week 0
+
 I'm looking forward to kicking off Newsgames this week with you all.
 We'll meet Thursdays at 5 PM in room 436. As previously mentioned, the
 class will not meet Oct 17 and will run through Nov 14.
@@ -14,7 +16,7 @@ desk][1]. CC me on that ticket so I have a heads up that there's a problem.
 
 + If you don't already have [Textwrangler][3] install that, too.
 
-+ Play [Switch][4] for at least 10 minutes.
++ Play [Switch][4] for at least 5 minutes.
 
 + Identify two news or educational games that you think are great (they
 don't have to be digital) and be prepared to discuss the following
