@@ -1,0 +1,670 @@
+<html>
+
+<head>
+
+<style type="css">
+// ballot.css
+
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}.int-chad-ballot-wrapper{clear:both;-webkit-tap-highlight-color:rgba(0,0,0,0)}.int-chad-ballot-wrapper.int-chad-scoop600{margin-top:1em}.int-chad-option{position:relative;background:none;list-style:disc outside;border:1px solid #fff;margin:1em 20px}.int-chad-option p{margin:0}.selfsame .int-chad-option{cursor:pointer}.int-chad-option-chosen{font-weight:bold;outline:1px solid #000}.int-chad-ballot-failed{background-color:#efefef;border:1px solid #ccc;padding:15px;font-style:italic}.int-chad-ballot-failed:hover{border-color:#aaa}.scoop190 .int-chad-question h3.int-chad-question-title{font:normal 12px/14px "Helvetica Neue",Helvetica,Arial,sans-serif;margin-bottom:8px}.scoop190 .int-chad-question li.int-chad-option,.scoop190 .int-chad-question ul.options{margin:0}.scoop190 .int-chad-question-number{float:left;padding-left:8px}.int-chad-question li.int-chad-option{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_unselected.png") no-repeat left top;display:block;cursor:pointer!important;border:0;margin:.5em 20px;padding-top:5px;padding-bottom:7px;padding-left:31px;font-family:arial,helvetica,sans-serif;font-size:12px;color:#666}.int-chad-question.int-chad-answered li.int-chad-option{cursor:default!important}.int-chad-question li.int-chad-option-chosen{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_selected.png") no-repeat left top;font-weight:normal;outline:none}.int-chad-question h3.int-chad-question-title{text-align:left;margin:0;color:#666;font-family:georgia,"times new roman",serif;font-size:14px;font-weight:normal;line-height:23px;padding-right:20px}.int-chad-question-number{font-weight:bold;color:#333}.int-chad-question ul.options{padding-left:16px;margin:12px 0 8px 0}.int-chad-question{padding-bottom:10px;border-bottom:1px solid #dbdbda;margin-bottom:18px}li span.int-chad-option-winner-mark{font-size:18px;left:3px;position:absolute;top:3px;display:none;font-style:normal;background-color:#fff;line-height:18px;height:18px;width:18px;text-align:center}.int-chad-flipped.int-chad-wrong .int-chad-option-winner-mark{display:block}.int-chad-option strike{color:#990b08;color:rgba(153,11,8,0.5)}.int-chad-option strike p{color:#990b08;font-weight:normal}.int-chad-standard-numbered-question.int-chad-wrong li.int-chad-option.int-chad-option-chosen{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_wrong.png") no-repeat left top}.selfsame .int-chad-answered .int-chad-option{cursor:inherit}.int-chad-percentage-correct{font-family:arial,helvetica,sans-serif;font-size:.75em;color:#999;font-style:italic;margin:10px 20px}.int-chad-score-button{clear:both;background:#004276;padding:7px 20px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;color:white;font-family:arial,helvetica,sans-serif;font-size:11px;margin:10px 0;width:70px;cursor:pointer}.int-chad-ballot-wrapper .int-chad-question-image_w75,.int-chad-ballot-wrapper .int-chad-question-image_w190{float:right;margin:6px 0 6px 6px}.int-chad-question.int-chad-photo-question{padding:40px 0}.int-chad-question.int-chad-photo-question ul.options{white-space:nowrap}.int-chad-question.int-chad-photo-question li.int-chad-option{display:inline-block;float:left;margin:.5em 0;padding-left:0;position:relative;background:none!important;white-space:normal}.int-chad-question.int-chad-photo-question.int-chad-options-count-1 li.int-chad-option{width:100%}.int-chad-question.int-chad-photo-question.int-chad-options-count-2 li.int-chad-option,.int-chad-question.int-chad-photo-question.int-chad-options-count-4 li.int-chad-option{width:48%;padding:2px 0}.int-chad-question.int-chad-photo-question.int-chad-options-count-3 li.int-chad-option{width:33%}.int-chad-photo-question li.int-chad-option div.int-chad-max-container{max-width:970px;width:95%;margin:0 auto;position:relative;overflow:hidden}img.int-chad-option-photo{width:100%;border-bottom:5px solid #fff}.int-chad-question-photo{display:none}.int-chad-photo-in-question .int-chad-question-photo{text-align:center;display:inline-block;clear:both;width:auto;max-width:600px;position:relative;font-size:13px}.int-chad-question-photo img{float:none!important;display:block;height:auto!important;max-width:600px;max-height:415px;width:100%}.int-chad-bumper{padding-bottom:5px;overflow:hidden;position:relative;max-width:300px;display:inline-block;clear:both;visibility:hidden;height:15px}.int-chad-bumper.int-chad-bumper-shown{height:auto}.int-chad-photo-in-question .int-chad-question-inner{text-align:center}.int-chad-photo-in-question .int-chad-question-body{width:85%;margin:0 auto}.int-chad-photo-in-question p.int-chad-option-photo-credit{font-size:9px;font-family:arial,sans-serif;position:absolute;right:0;display:inline;width:inherit!important;white-space:normal!important;line-height:1.223em;min-width:300px;text-align:right;max-width:600px!important;color:#909090;margin:3px 0 0 0}.int-chad-photo-in-question ul.options{margin:0 auto;max-width:370px}.int-chad-question.int-chad-photo-in-question li.int-chad-option{height:40px;font:400 14px/18px "nyt-franklin","nytfranklin",arial,sans-serif;color:#666;border:1px solid #e2e2e2;background:#f6f6f6!important;background:-moz-linear-gradient(top,#f6f6f6 0,#f5f5f5 100%)!important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f6f6f6),color-stop(100%,#f5f5f5))!important;background:-webkit-linear-gradient(top,#f6f6f6 0,#f5f5f5 100%)!important;background:-o-linear-gradient(top,#f6f6f6 0,#f5f5f5 100%)!important;background:-ms-linear-gradient(top,#f6f6f6 0,#f5f5f5 100%)!important;background:linear-gradient(to bottom,#f6f6f6 0,#f5f5f5 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6',endColorstr='#f5f5f5',GradientType=0);border-bottom:1px solid #cecece;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;text-align:center}.int-chad-question.int-chad-photo-in-question li.int-chad-option.odd{float:left}.int-chad-question.int-chad-photo-in-question li.int-chad-option.even{float:right}.scoop-190 .int-chad-question.int-chad-photo-in-question li.int-chad-option{height:auto;padding:5px 0 7px 0}.int-chad-question.int-chad-unanswered.int-chad-photo-in-question li.int-chad-option:hover{cursor:pointer;color:#fff;box-shadow:0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px -1px 0 rgba(0,0,0,0.02);-webkit-box-shadow:0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px -1px 0 rgba(0,0,0,0.02);-moz-box-shadow:0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px -1px 0 rgba(0,0,0,0.02);background:#666!important;background:-moz-linear-gradient(top,#666 0,#606060 100%)!important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#666),color-stop(100%,#606060))!important;background:-webkit-linear-gradient(top,#666 0,#606060 100%)!important;background:-o-linear-gradient(top,#666 0,#606060 100%)!important;background:-ms-linear-gradient(top,#666 0,#606060 100%)!important;background:linear-gradient(to bottom,#666 0,#606060 100%)!important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#606060',GradientType=0)}.int-chad-photo-in-question li.int-chad-option div.int-chad-max-container{width:auto;padding:10px 0}.int-chad-photo-in-question li.int-chad-option:first-child div.int-chad-max-container{border-right:0 solid #fff}.int-chad-photo-in-question li.int-chad-option:last-child div.int-chad-max-container{border-left:0 solid #fff}.int-chad-photo-in-question.int-chad-answered ul.options,.int-chad-photo-in-question p.int-chad-result{display:none}.int-chad-photo-in-question.int-chad-answered p.int-chad-result{display:block;background-image:url('http://graphics8.nytimes.com/newsgraphics/2013/08/07/science-quiz/191883bc5b5845cacf6f43836eb64c8c5b1ff406/icons/close_btn.svg');background-position:0 3px;background-repeat:no-repeat;color:#f0522a;background-size:12px;text-indent:20px;display:block;font:400 12px/18px "nyt-franklin","nytfranklin",arial,sans-serif;text-transform:uppercase;text-align:left}.int-chad-photo-in-question.int-chad-answered.int-chad-right p.int-chad-result{background-image:url('http://graphics8.nytimes.com/newsgraphics/2013/08/07/science-quiz/191883bc5b5845cacf6f43836eb64c8c5b1ff406/icons/check_btn.svg');background-position:0 2px;color:#40a328}.int-chad-photo-question.int-chad-answered img.int-chad-option-photo{border-color:#990b08}.int-chad-photo-question.int-chad-answered .int-chad-option-winner img.int-chad-option-photo{border-color:#87d079}.int-chad-wrong-mark,.int-chad-right-mark{display:none}.int-chad-photo-in-options .int-chad-wrong-mark,.int-chad-photo-in-options .int-chad-right-mark{position:absolute;top:0;left:0;width:50px;height:45px;font-size:2.3em;color:#fff;text-align:center;line-height:1.6;border-top:1px solid #fff;border-bottom:1px solid #fff}.int-chad-photo-question.int-chad-photo-in-question.int-chad-wrong .int-chad-option-chosen .int-chad-wrong-mark,.int-chad-photo-question.int-chad-photo-in-question.int-chad-right .int-chad-option-chosen .int-chad-right-mark{display:inline-block;text-indent:-9999px;background-image:url('http://graphics8.nytimes.com/projects/assets/oscars_2013/images/2013/vote-target-sprite2-bw.png');background-position:0 -53px;background-repeat:no-repeat;height:16px;width:18px;vertical-align:middle}.int-chad-photo-question.int-chad-photo-in-question.int-chad-right .int-chad-option-chosen .int-chad-right-mark{background-position:0 -17px;vertical-align:top}.int-chad-photo-question.int-chad-photo-in-options.int-chad-wrong .int-chad-option-chosen .int-chad-wrong-mark,.int-chad-photo-question.int-chad-photo-in-options.int-chad-right .int-chad-option-chosen .int-chad-right-mark{display:block}.int-chad-photo-question.int-chad-photo-in-options .int-chad-wrong-mark{border-color:#791715;background-color:#990b08;-webkit-box-shadow:1px 1px 2px #3d0a09;-moz-box-shadow:1px 1px 2px #3d0a09}.int-chad-photo-question.int-chad-photo-in-options .int-chad-right-mark{border-color:#8dbd96;background-color:#87d079;-webkit-box-shadow:1px 1px 2px #5b8a64;-moz-box-shadow:1px 1px 2px #5b8a64}.int-chad-photo-question p.int-chad-option-explanation{font-size:15px;line-height:22px;color:#666;text-align:left;font-style:normal;font-size:14px;font-weight:200;font-family:"nyt-franklin",arial,helvetica,sans-serif}.int-chad-photo-question p.int-chad-option-explanation span.int-chad-question-title{display:block;margin-bottom:5px;font-size:18px!important;font-weight:400;color:#000!important}.int-chad-photo-question p.int-chad-option-title,.int-chad-photo-question p.int-chad-question-title{display:block}.int-chad-photo-question.int-chad-photo-in-question p.int-chad-option-title{display:inline-block}.int-chad-photo-question .int-chad-option-explanation{color:#333}p.int-chad-option-photo-credit{font-size:.75em;line-height:1.223em;text-align:right;color:#909090;margin:0 0 3px 0}.int-chad-ballot-wrapper div[data-question-type]{padding-top:12px}.int-chad-question.int-chad-range-question{margin-bottom:12px}.int-chad-question.int-chad-range-question .int-chad-question-inner{width:100%;clear:both}.int-chad-question.int-chad-range-question .int-chad-question-title{float:left;width:36%;padding-right:4%;margin:0;color:#333;font-family:georgia,"times new roman",serif;font-size:14px;line-height:21px;font-weight:normal}.int-chad-question.int-chad-range-question ul.options{float:left;margin:0;padding:0}.int-chad-question.int-chad-range-question li.int-chad-option{float:left;margin:0;border:none;height:24px;padding-left:30px}.int-chad-range-header{padding-left:40%;border-bottom:1px solid #dbdbda;margin-bottom:12px}.int-chad-range-header.int-chad-range-header-repeated{margin-bottom:0;border-bottom:none}.int-chad-range-header .int-chad-range-option{color:#666;font-family:arial,helvetica,sans-serif;font-size:12px;float:left;padding-right:1px;width:29px;height:24px;text-align:center}.int-chad-range-header .int-chad-range-labels{position:relative;height:15px;font-size:12px;font-family:arial,helvetica,sans-serif;font-weight:bold}.int-chad-range-header .int-chad-range-label.int-chad-range-start-label{position:absolute;left:0}.int-chad-range-header .int-chad-range-label.int-chad-range-end-label{position:absolute;left:240px}.int-chad-strike{color:#990b08;font-weight:normal;text-decoration:line-through}.int-chad-hidden{display:none}.int-chad-mobile-ballot{-webkit-text-size-adjust:none;padding:5px}.int-chad-mobile-ballot .int-chad-option-winner-mark{font-size:28px;line-height:20px}.int-chad-mobile-ballot .int-chad-question-image_w190,.int-chad-mobile-ballot .int-chad-question-image_w75{margin:0 0 5px 10px}.int-chad-mobile-ballot .int-chad-standard-numbered-question .int-chad-option{clear:both;margin-left:10px!important}@media only screen and (max-width :320px){.int-chad-mobile-ballot .int-chad-question-image_w190{max-width:150px}.int-chad-mobile-ballot .int-chad-photo-question li.int-chad-option{width:100%;display:block}}.int-chad-promo-save,.int-chad-promo-action{color:white;background-color:#004276;border:1px solid #004276;border-radius:2px;-webkit-border-radius:2px;-o-border-radius:2px;-moz-border-radius:2px;cursor:pointer;float:right;font:bold 12px/14px Arial,Helvetica,sans-serif;margin:0 0 0 5px;overflow:visible;padding:6px;text-align:center;transition:background .1s ease-in-out;-webkit-transition:background .1s ease-in-out;-moz-transition:background .1s ease-in-out;-o-transition:background .1s ease-in-out;white-space:nowrap;vertical-align:middle}.int-chad-promo-save:hover,.int-chad-promo-save.complete,.int-chad-promo-action:hover,.int-chad-promo-action.complete{color:#333;border-color:#b5c8d9;background-color:#efeeec;transition:background .1s ease-in-out;-webkit-transition:background .1s ease-in-out;-moz-transition:background .1s ease-in-out;-o-transition:background .1s ease-in-out}.int-chad-scoop190 .int-chad-question h3.int-chad-question-title{font:normal 12px/14px "Helvetica Neue",Helvetica,Arial,sans-serif}.int-chad-scoop190 .int-chad-question li.int-chad-option,.int-chad-scoop190 .int-chad-question ul.options{margin:0}.int-chad-scoop190 .int-chad-question h3.int-chad-question-title .int-chad-question-title-text{padding:0;display:inline-block;float:left;width:83%}.int-chad-scoop190 .int-chad-question-body{clear:left;padding-top:8px}.int-chad-scoop190 .int-chad-question-number{float:left;padding:0 8px 8px 0}.int-chad-scoop190 .int-chad-promo-prediction-question h3.int-chad-question-title .int-chad-question-title-text{font-size:13px;line-height:17px;width:100%}.int-chad-scoop190 .int-chad-promo-prediction-question .int-chad-promo-action{margin-top:10px}.int-chad-scoop190 .int-chad-promo-prediction-question ul.options{padding-left:0}.int-chad-scoop190 .int-chad-promo-prediction-question .int-chad-question-number.int-chad-q{color:#666;display:inline;font:bold 24px/1.0em Georgia,"Times New Roman",serif;letter-spacing:-2px}.int-chad-scoop190 .int-chad-question h3.int-chad-question-title{padding-right:0}.int-chad-scoop190 .int-chad-promo-prediction-question h3.int-chad-question-title .int-chad-question-title-text.int-chad-q{display:inline;width:138px}.int-chad-mobile-ballot .int-chad-grade.int-chad-prediction-grade div.int-chad-share-score{display:none}.int-chad-mobile-ballot .int-chad-grade.int-chad-prediction-grade div{width:auto}.int-chad-mobile-ballot .int-chad-percentage-correct{margin:10px}.int-chad-promo-ballot-wrapper.int-chad-photo_promo-wrapper .int-chad-clear-ballot{display:none}.int-chad-promo-photo-question.int-chad-question{padding:0;border:0;margin:0}.int-chad-promo-photo-question .int-chad-question-body{padding-top:0}.int-chad-scoop190 .int-chad-photo-in-question li.int-chad-option div.int-chad-max-container,.int-chad-promo-photo-question.int-chad-photo-in-question li.int-chad-option div.int-chad-max-container{padding:0}.int-chad-scoop190 .int-chad-photo-question.int-chad-photo-in-options li.int-chad-option,.int-chad-promo-photo-question.int-chad-photo-in-options li.int-chad-option{width:100%;display:block}.int-chad-promo-photo-question.int-chad-photo-in-question p.int-chad-option-explanation,.int-chad-promo-photo-question.int-chad-photo-in-options p.int-chad-option-explanation{margin:8px 2px;font-size:12px;line-height:1.2em}.int-chad-promo-photo-question .int-chad-question-actions{padding-top:15px}.int-chad-promo-photo-question a.int-chad-clear-ballot{visibility:hidden}.int-chad-scoop190 .int-chad-photo-in-options .int-chad-wrong-mark,.int-chad-scoop190 .int-chad-photo-in-options .int-chad-right-mark,.int-chad-mobile-ballot .int-chad-photo-in-options .int-chad-wrong-mark,.int-chad-photo-in-options .int-chad-mobile-ballot .int-chad-right-mark{width:30px;height:25px;font-size:1.4em;line-height:1.5}.int-chad-blogpost .int-chad-photo-in-options .int-chad-wrong-mark,.int-chad-blogpost .int-chad-photo-in-options .int-chad-right-mark{width:35px;height:30px;font-size:1.7em;line-height:1.5}
+
+// well.css
+.well.int-chad-ballot-wrapper .int-chad-quiz-user-header{border-bottom:2px solid #dbdbda;padding-bottom:10px;margin-bottom:18px}.well .int-chad-question li.int-chad-option{padding-top:7px;padding-bottom:5px}.well .int-chad-question li.int-chad-option-chosen{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_selected.png") no-repeat left top;font-style:italic;font-weight:normal;outline:none}.well .int-chad-question-number{float:left;background:none repeat scroll 0 0 #81cf83;color:white;font-size:13px;text-align:center;line-height:19px;height:19px;display:block;vertical-align:bottom;margin-top:1px;margin-right:6px;padding:0 6px 1px 6px;border:none;border-radius:0;text-decoration:none}.well .int-chad-question h3.int-chad-question-title{color:#333;font-weight:bold;line-height:21px}.well .int-chad-question ul.options{padding-left:10px;margin:8px 0}.well .int-chad-question.int-chad-range-question ul.options{padding-left:0}.well .int-chad-question{padding-bottom:10px;border-bottom:1px solid #dbdbda;margin-bottom:18px}.well .int-chad-quiz-user-header{font-size:12px;padding:4px 0;font-family:georgia,"times new roman",serif}.well .int-chad-quiz-user-header,a.int-chad-clear-ballot{font-family:Arial,Helvetica,sans-serif}a.int-chad-clear-ballot{float:right;color:#004276;text-decoration:none;font-size:12px;line-height:15px}.well a.int-chad-clear-ballot:hover{text-decoration:underline}.well .int-chad-grade{margin:20px 0 0 0;background-color:#f0f4f5;font-family:arial,verdana,"sans-serif"}.well .int-chad-grade-heading{border-bottom:1px solid white;color:#666;font-family:arial;font-size:13px;padding:10px 0 10px 13px;text-align:left;text-transform:uppercase;font-weight:normal;margin-top:0;margin-bottom:0}.well .int-chad-grade-section{padding:10px 0;border-bottom:1px solid white}.well .int-chad-your-grade{background:none repeat scroll 0 0 #81cf83;color:white;display:block;font-size:13px;font-weight:bold;margin-bottom:15px;padding:10px;text-transform:uppercase}.well .int-chad-grade .int-chad-grade-title{color:black;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;margin:0 0 2px;padding:0;text-transform:uppercase;margin-left:22px}.well .int-chad-grade .int-chad-grade-description{color:#333;padding:0 22px 13px;font-family:georgia,"times new roman",serif;font-size:14px;line-height:21px;margin:0 10px 10px 0}.well .int-chad-other-grade{background:none repeat scroll 0 0 #DDD;margin:0 13px 10px 13px;padding:10px}.well .int-chad-other-grade .int-chad-grade-title{margin-left:0}.well .int-chad-other-grade .int-chad-grade-description{border:none;padding:0;color:#666;font-family:georgia,"times new roman",serif;font-size:12px;line-height:18px}.well li span.int-chad-option-winner-mark{color:#81cf83}.well .int-chad-flipped.int-chad-wrong .int-chad-option-winner-mark{display:block}.well p.int-chad-option-explanation{margin-top:8px;color:#666;font-style:normal}.well .int-chad-well-prediction-question.int-chad-answered .int-chad-option-winner .int-chad-option-title{font-weight:bold;font-style:normal;color:#2a872a}.well .int-chad-well-prediction-question.int-chad-wrong .int-chad-option-winner .int-chad-option-explanation{border-left:4px solid #81cf83;margin-top:8px;padding-left:6px}.well .int-chad-well-prediction-question.int-chad-right li.int-chad-option.int-chad-option-chosen{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_well_green_check.png") no-repeat left top}.well .int-chad-well-prediction-question.int-chad-wrong li.int-chad-option.int-chad-option-chosen{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_wrong.png") no-repeat left top}.well .int-chad-option strike{color:#990b08;color:rgba(153,11,8,0.5)}.well .int-chad-option strike p{color:#990b08;font-weight:normal}.well .selfsame .int-chad-well-prediction-question.int-chad-answered .int-chad-option{cursor:default}.well .int-chad-prediction-grade{padding:4px;margin-top:24px;font-size:14px;background:transparent}.well .int-chad-prediction-grade p.int-chad-prediction-your-grade{float:left;display:block;padding:20px;font-size:13px;line-height:16px}.well .int-chad-prediction-grade .int-chad-prediction-score{font-size:36px;margin-left:12px;position:relative;top:6px}.int-chad-ballot-wrapper.well.int-chad-promo .int-chad-quiz-user-header,.int-chad-ballot-wrapper.well.int-chad-promo .int-chad-clear-ballot{display:none}.well.int-chad-scoop190 .int-chad-promo-prediction-question .int-chad-question-number.int-chad-q{background:none;padding:0;margin-top:-3px}.well.int-chad-scoop190 .int-chad-promo-prediction-question h3.int-chad-question-title .int-chad-question-title-text.int-chad-q{float:none}.well.int-chad-scoop190 .int-chad-question li.int-chad-option{margin-left:0}.well.int-chad-ballot-wrapper .int-chad-question-image_w75,.well.int-chad-ballot-wrapper .int-chad-question-image_w190{float:right;margin:6px 0 6px 6px}.well .int-chad-grade.int-chad-cat-assessment-grade .int-chad-grade-title{margin:0 0 8px 13px}.well .int-chad-grade.int-chad-cat-assessment-grade .int-chad-other-grade .int-chad-grade-title{margin-left:0}.well#int-chad-ballot-wrapper-20130226-diet .int-chad-ballot-scored li.int-chad-option[data-chad-option-score="1"]{background-color:#ccc}.well#int-chad-ballot-wrapper-20130226-diet .int-chad-question li.int-chad-option-chosen{font-style:normal;font-weight:normal}.well#int-chad-ballot-wrapper-20130226-diet .int-chad-ballot-scored li.int-chad-option[data-chad-option-score="1"]{background:url("http://css.nyt.com/projects/assets/chad/images/checkbox_well_green_check.png") no-repeat left top}
+</style>
+
+<script>
+
+(function(){this.JST||(this.JST={}),this.JST["themes/well/quiz_grade"]=function(c){var a=[];with(c||{})a.push('<div class="int-chad-grade">\n  <h5 class="int-chad-grade-heading">What does your score say about you?</h5>\n  <div class="int-chad-grade-section">\n    <div class="int-chad-your-grade">Your score: ',your_score,'</div>\n    <h6 class="int-chad-grade-title">\n      ',name," "),values&&""!==formatted_grade_range&&a.push("(",formatted_grade_range,")"),a.push('\n    </h6>\n    <p class="int-chad-grade-description">',description,"</p>\n  </div>\n  "),0<other_grades.length&&(a.push('\n  <h5 class="int-chad-grade-heading">How others score:</h5>\n  <div class="int-chad-grade-section">\n    '),_(other_grades).each(function(n){a.push('\n      <div class="int-chad-other-grade">\n        <h6 class="int-chad-grade-title">\n          ',n.name," "),n.values&&""!==n.formatted_grade_range&&a.push("(",n.formatted_grade_range,")"),a.push('\n        </h6>\n        <p class="int-chad-grade-description">',n.description,"</p>\n      </div>\n    ")}),a.push("\n  </div>\n  ")),a.push("\n</div>\n");return a.join("")}}).call(this),function(){Chad.modules.well={create:function(n){var i=Object.create(this.proto);return i.ballot=n,i.root=i.ballot.root,i.ballot.promises.markup_ready.done(function(){i.markup_ready()}),i.ballot.promises.modules.done(function(){i.modules()}),i}},Chad.modules.well.proto={modules:function(){this.ballot.quiz_grade_template=JST["themes/well/quiz_grade"]},markup_ready:function(){var n=this.ballot.config.chain_promo||void 0!==this.ballot.config.promo_range;this.ballot.root.addClass("well"),n&&this.ballot.root.addClass("int-chad-promo")}}}(Chad.jQuery),function(){this.JST||(this.JST={}),this.JST["themes/well/well_assessment"]=function(c){var a=[];with(c||{})a.push(""),question_classes=["int-chad-question int-chad-well-large-question grid_6 clearfix",intransit?"intransit":"",visible?"":"int-chad-hidden",selection?"int-chad-answered":"int-chad-unanswered",winner?"int-chad-haswinner":"int-chad-nowinner",flipped?"int-chad-flipped":"int-chad-unflipped",selection&&winner===selection?"int-chad-right":"int-chad-wrong"],a.push('\n<div class="',question_classes.join(" "),'" data-chad-question-id="',question_id,'">\n  <div class="int-chad-question-inner">\n    '),metadata&&!_.isEmpty(metadata.image_w190)?a.push('\n      <img src="',metadata.image_w190,'" class="int-chad-question-image_w190">\n    '):metadata&&!_.isEmpty(metadata.image_w75)&&a.push('\n      <img src="',metadata.image_w75,'" class="int-chad-question-image_w75">\n    '),a.push('\n\n    <h3 class="int-chad-question-title">\n      <span class="int-chad-question-number">',position,"</span>\n      ",title.replace(/[\r\n]{1,2}/g,"<br>"),'\n    </h3>\n\n    <div class="int-chad-question-body">\n      <ul class="options"> \n        '),_(options).each(function(n,i){options_classes=["int-chad-option",n.winner?"int-chad-option-winner":"",n.option_id===selection?"int-chad-option-chosen":"",0===i%2?"odd":"even"],a.push('\n            <li data-chad-option="',n.position,'" data-chad-option-id="',n.option_id,'"\n              data-chad-option-score="',n.score,'" class="',options_classes.join(" "),'"> \n            <p class="int-chad-option-title">',n.title,'</p>\n            <p class="int-chad-option-subtitle">',n.metadata.subtitle,"</p>\n          </li>\n        ")}),a.push(' \n      </ul>\n    </div>\n  </div>\n  <div class="int-chad-question-actions clearfix">\n    '),a.push("\n  </div>\n</div>\n");return a.join("")}}.call(this),function(){this.JST||(this.JST={}),this.JST["themes/well/well_prediction"]=function(c){var a=[];with(c||{})a.push(""),question_classes=["int-chad-question int-chad-well-prediction-question grid_6 clearfix",intransit?"intransit":"",visible?"":"int-chad-hidden",selection?"int-chad-answered":"int-chad-unanswered",winner?"int-chad-haswinner":"int-chad-nowinner",flipped?"int-chad-flipped":"int-chad-unflipped",selection&&winner===selection?"int-chad-right":"int-chad-wrong"],a.push('\n<div class="',question_classes.join(" "),'" data-chad-question-id="',question_id,'">\n  <div class="int-chad-question-inner"> \n    '),metadata&&!_.isEmpty(metadata.image_w190)?a.push('\n      <img src="',metadata.image_w190,'" class="int-chad-question-image_w190">\n    '):metadata&&!_.isEmpty(metadata.image_w75)&&a.push('\n      <img src="',metadata.image_w75,'" class="int-chad-question-image_w75">\n    '),a.push('\n    <h3 class="int-chad-question-title">\n      <span class="int-chad-question-number">',position,'</span>\n      <span class="int-chad-question-title-text">',title.replace(/[\r\n]{1,2}/g,"<br>"),'</span>\n    </h3>\n    <div class="int-chad-question-body">\n      <ul class="options"> \n        '),_(options).each(function(n,i){options_classes=["int-chad-option",n.winner?"int-chad-option-winner":"",n.option_id===selection?"int-chad-option-chosen":"",0===i%2?"odd":"even"],a.push('\n            <li data-chad-option="',n.position,'" data-chad-option-id="',n.option_id,'" class="',options_classes.join(" "),'">\n              '),n.winner&&a.push('\n              <span class="int-chad-option-winner-mark">&#10004;</span>\n              '),a.push("\n              "),strike_class=selection&&!n.winner&&winner&&winner!==selection?"int-chad-strike":"",a.push('\n              <p class="int-chad-option-title ',strike_class,'">',n.title,"</p>\n              "),selection&&a.push('\n              <p class="int-chad-option-explanation">',n.metadata.option_explanation,"</p>\n              "),a.push("\n          </li>\n        ")}),a.push(" \n      </ul>\n    </div>\n  </div>\n  "),a.push('\n  <div class="int-chad-question-actions clearfix">\n    '),a.push("\n  </div>\n</div>\n");return a.join("")}}.call(this),function(){this.JST||(this.JST={}),this.JST["themes/well/well_prediction_promo"]=function(c){var a=[];with(c||{})a.push(""),question_classes=["int-chad-question int-chad-promo-prediction-question int-chad-well-prediction-question grid_6 clearfix",intransit?"intransit":"",visible?"":"int-chad-hidden",selection?"int-chad-answered":"int-chad-unanswered",winner?"int-chad-haswinner":"int-chad-nowinner",flipped?"int-chad-flipped":"int-chad-unflipped",selection&&winner===selection?"int-chad-right":"int-chad-wrong"],a.push('\n<div class="',question_classes.join(" "),'" data-chad-question-id="',question_id,'">\n  <div class="int-chad-question-inner">\n    <h3 class="int-chad-question-title">\n      <span class="int-chad-question-number int-chad-q">Q.</span>\n      <span class="int-chad-question-title-text int-chad-q">',title.replace(/[\r\n]{1,2}/g,"<br>"),'</span>\n    </h3>\n    <div class="int-chad-question-body">\n      <ul class="options"> \n        '),_(options).each(function(n,i){options_classes=["int-chad-option",n.winner?"int-chad-option-winner":"",n.option_id===selection?"int-chad-option-chosen":"",0===i%2?"odd":"even"],a.push('\n            <li data-chad-option="',n.position,'" data-chad-option-id="',n.option_id,'" class="',options_classes.join(" "),'">\n              '),n.winner&&a.push('\n              <span class="int-chad-option-winner-mark">&#10004;</span>\n              '),a.push("\n              "),strike_class=selection&&!n.winner&&winner&&winner!==selection?"int-chad-strike":"",a.push('\n              <p class="int-chad-option-title ',strike_class,'">',n.title,"</p>\n          </li>\n        ")}),a.push(' \n      </ul>\n    </div>\n  </div>\n  <div class="int-chad-question-actions clearfix">\n    '),q_length=this.ballot.questions.length,mod_length=this.ballot.questions.models.length,chained=void 0!==this.ballot.config.chain_promo,solo_question=position!==q_length&&1==q_length,last_ranged_question=mod_length!==q_length&&mod_length==position,(chained||solo_question||last_ranged_question)&&a.push('\n      <button class="int-chad-promo-action">Next question &raquo;</button>\n    '),a.push("\n  </div>\n</div>\n");return a.join("")}}.call(this);
+</script>
+
+
+</head>
+
+<body>
+
+<link rel="stylesheet" src="http://int.nyt.com/applications/balloteer/assets/ballot.css" type="text/stylesheet" />
+<div id="int-chad-ballot-wrapper-20130208-flquiz" class="int-chad-ballot-wrapper int-chad-blogpost"></div>
+<p><script type="text/javascript" src="http://int.nyt.com/applications/balloteer/assets/show.js"></script><br />
+<script type="text/javascript">
+Chad.embed_init({"ballot_slug":"20130208-flquiz","target_id":"#int-chad-ballot-wrapper-20130208-flquiz","question_type":"well_prediction"});
+</script></p>
+
+<div id="int-chad-ballot-wrapper-20130208-flquiz" class="int-chad-ballot-wrapper int-chad-blogpost selfsame well"><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-unflipped int-chad-right int-chad-ballot-scored" data-chad-question-id="782">
+  <div class="int-chad-question-inner"> 
+    
+      <img src="http://graphics8.nytimes.com/images/2013/02/08/health/08well_flu2/08well_flu2-articleInline.jpg" class="int-chad-question-image_w190">
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">1</span>
+      <span class="int-chad-question-title-text">In general, if you interact with a person with the flu, how far away do you have to stand to avoid coming into contact with his germs?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3510" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">1 foot.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3511" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">3 feet.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3512" class="int-chad-option int-chad-option-winner int-chad-option-chosen odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">7 feet.</p>
+              
+              <p class="int-chad-option-explanation"><a href="http://well.blogs.nytimes.com/2013/02/11/really-flu-is-spread-primarily-through-close-contact/?ref=health">Scientists at the Wake Forest School of Medicine</a> measured how far a person with the flu can transmit infectious particles through the air. After finding 61 patients admitted to the hospital with the flu, the researchers collected air samples from the patients' hospital rooms. Ultimately, they found infectious particles had spread up to 6 feet away from the patients through speaking, coughing, sneezing and other normal behavior.   
+</p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3513" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">Leave the room.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-right int-chad-ballot-scored" data-chad-question-id="783">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">2</span>
+      <span class="int-chad-question-title-text">What’s the best way to contain the germs expelled in a cough or sneeze?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3514" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">Place both hands over one’s mouth and nose.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3515" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">Place a tissue over one’s face.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3516" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">Use a surgical mask.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3517" class="int-chad-option int-chad-option-winner int-chad-option-chosen even">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">Use a specially-designed cough catcher.</p>
+              
+              <p class="int-chad-option-explanation">A <a href="http://www.coughcatcher.com/">cough-catcher</a> is a flat plastic sheath lined with material similar to a surgical mask. When a cough is coming on, instead of a tissue, a person grabs a cough-catcher, opens it and places it over their mouth ' all before they actually cough. Researchers from Singapore's National University Hospital found that if a person has time to grab their cough catcher and place it over their mouth, it's the most effective way to contain germs.  </p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="800">
+  <div class="int-chad-question-inner"> 
+    
+      <img src="http://graphics8.nytimes.com/images/2013/02/08/health/08well_flu5/08well_flu5-articleInline.jpg" class="int-chad-question-image_w190">
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">3</span>
+      <span class="int-chad-question-title-text">One popular Web video entitled “Why Don't We Do It In Our Sleeves?”   demonstrates what method for curbing the spread of germs?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3580" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">How to disinfect a bathroom.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3581" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">How to wash one's hands.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3582" class="int-chad-option int-chad-option-winner  odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">How to cough or sneeze.</p>
+              
+              <p class="int-chad-option-explanation">For coughers and sneezers who don't have a <a href="http://www.coughcatcher.com/">"cough catcher"</a> handy (see question 2), doctors often advise sneezing or coughing into your <a href="http://www.youtube.com/watch?v=CtnEwvUWDo0">sleeve</a> as the most practical and sanitary way to prevent the spread of germs. The method keeps your hands free of contamination and means you are less likely to leave a trail of cold and flu germs on door knobs, hand rails, phone headsets and computer keyboards.</p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3583" class="int-chad-option  int-chad-option-chosen even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">How to take a shower.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-right int-chad-ballot-scored" data-chad-question-id="792">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">4</span>
+      <span class="int-chad-question-title-text">Touching the eyes, mouth or nose is often how the flu virus is transmitted. A study videotaping 10 people while sitting at a desk found that they touched their faces, on average, how many times an hour?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3549" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">4.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3550" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">11.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3551" class="int-chad-option int-chad-option-winner int-chad-option-chosen odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">16.</p>
+              
+              <p class="int-chad-option-explanation"><a href="http://www.ncbi.nlm.nih.gov/pubmed/18357546">For the study,</a> researchers had participants sit at a desk for three hours doing typical office work. The participants touched their faces an average of 16 times per hour. </p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3552" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">24.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="793">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">5</span>
+      <span class="int-chad-question-title-text">What part of the face do people touch most frequently?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3553" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Eyes.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3554" class="int-chad-option  int-chad-option-chosen even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Nose.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3555" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Forehead.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3556" class="int-chad-option int-chad-option-winner  even">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">Lips.</p>
+              
+              <p class="int-chad-option-explanation"><a href="http://www.ncbi.nlm.nih.gov/pubmed/18357546">The participants</a> touched their lips about 8 times an hour. Notably, they placed a finger in a nostril about 5 times an hour, and rubbed their eyes about two. Pathogens, like the flu virus, are commonly spread by using one's contaminated hands to touch a mucus membrane like their mouth or nose. </p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-right int-chad-ballot-scored" data-chad-question-id="794">
+  <div class="int-chad-question-inner"> 
+    
+      <img src="http://graphics8.nytimes.com/images/2013/02/08/health/08well_flu4/08well_flu4-articleInline.jpg" class="int-chad-question-image_w190">
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">6</span>
+      <span class="int-chad-question-title-text">True or false: If you’ve already had the flu this year, there’s no reason to go for a flu vaccine. </span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3557" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">True.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3558" class="int-chad-option int-chad-option-winner int-chad-option-chosen even">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">False.</p>
+              
+              <p class="int-chad-option-explanation"><a href="http://well.blogs.nytimes.com/2013/01/16/ask-well-do-i-need-a-flu-shot-if-ive-had-the-flu/">False:</a> There are currently four different strains of the flu circulating and the flu vaccine can protect you against all four of them. If you did have the flu, you were likely only infected with one strain, so the vaccine can prevent you from getting a different form of the flu this year. In addition, there are lots of viruses that make you sick but aren't the flu, so even if you think you had the flu, you might have had something else.</p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="795">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">7</span>
+      <span class="int-chad-question-title-text">How did the illness known as “influenza,” which comes from the Italian word for “influence,” get its name?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3559" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Researchers realized that the flu was spread by the influence of one’s germs on another person.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3560" class="int-chad-option int-chad-option-winner  even">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">It was once believed that flu epidemics were caused by the influence of the moon and stars.</p>
+              
+              <p class="int-chad-option-explanation">The term 'influenza' was first applied to the disease because early Europeans believed that the widespread nature of flu epidemics were caused by the movement of the planets, moon and stars. The word was adopted into English in 1743.
+<br><br>
+Source: Dobson, Mary. 2007. <i>Disease: The Extraordinary Stories behind History's Deadliest Killers.</i> London, UK: Quercus.</p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3561" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">It was once believed that flu symptoms resulted from the bad influence of heretics.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3562" class="int-chad-option  int-chad-option-chosen even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">It was once believed that the flu was transmitted by the influence of indigenous people on explorers and conquerors.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="796">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">8</span>
+      <span class="int-chad-question-title-text">With all other conditions being equal, on which of the following surfaces would a flu virus live the longest?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3563" class="int-chad-option int-chad-option-winner  odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">Stainless steel countertop.</p>
+              
+              <p class="int-chad-option-explanation"><a href="http://www.ncbi.nlm.nih.gov/pubmed/6282993?itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_RVDocSum&amp;ordinalpos=1">In a study</a> published in the Journal of Infectious Diseases, researchers tested how long the flu virus survived on various surfaces. They determined that nonporous, hard surfaces, like stainless steel and plastic allowed the virus to live up to 48 hours. Porous, soft surfaces allowed the virus to live between 8 to 12 hours. </p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3564" class="int-chad-option  int-chad-option-chosen even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Tissue.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3565" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Your hands.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3566" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Cotton handkerchief.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-right int-chad-ballot-scored" data-chad-question-id="797">
+  <div class="int-chad-question-inner"> 
+    
+      <img src="http://graphics8.nytimes.com/images/2013/02/08/health/08well_flu3/08well_flu3-articleInline.jpg" class="int-chad-question-image_w190">
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">9</span>
+      <span class="int-chad-question-title-text">How long does the flu virus live on your hands?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3567" class="int-chad-option int-chad-option-winner int-chad-option-chosen odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">15 minutes.</p>
+              
+              <p class="int-chad-option-explanation">If you touch a contaminated surface like a metal handrail or steel countertop, the flu virus will stay alive on your hands for 15 minutes. This is why frequent hand-washing or use of hand sanitizers in classrooms has a marked effect on reducing flu transmission.</p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3568" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">30 minutes.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3569" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title ">1 hour.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3570" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title ">6 hours.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="798">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">10</span>
+      <span class="int-chad-question-title-text">It is estimated that the Spanish flu epidemic of 1918 caused 50 to 100 million deaths worldwide, making it the most deadly flu epidemic. Which of the follow was a common treatment for the flu during that time?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3571" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Gargling with salt water.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3572" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Smoking cigars.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3573" class="int-chad-option   odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Dousing with ice water.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3574" class="int-chad-option  int-chad-option-chosen even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Bleeding a patient.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="5" data-chad-option-id="3575" class="int-chad-option int-chad-option-winner  odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">All of the above.</p>
+              
+              <p class="int-chad-option-explanation">Doctors in 1918 tried various methods to cure patients of the flu. These included prescribing whiskey or cigars, asking them to gargle salt water, dousing patients with ice water or bleeding them. Some tried a surgical procedure to extract pus and blood from the chest cavity, however this procedure was almost always fatal. <br><br>Source: Iezzoni, Lynette. 1999. <i>Influenza 1918: The Worst Epidemic in American History.</i> New York, NY: TV Books, L.L.C.</p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><div>
+<div class="int-chad-question int-chad-well-prediction-question grid_6 clearfix   int-chad-answered int-chad-haswinner int-chad-flipped int-chad-wrong int-chad-ballot-scored" data-chad-question-id="799">
+  <div class="int-chad-question-inner"> 
+    
+    <h3 class="int-chad-question-title">
+      <span class="int-chad-question-number">11</span>
+      <span class="int-chad-question-title-text">Australian health officials have recently banned what practice to reduce the spread of illness in schools?</span>
+    </h3>
+    <div class="int-chad-question-body">
+      <ul class="options"> 
+        
+            <li data-chad-option="1" data-chad-option-id="3576" class="int-chad-option  int-chad-option-chosen odd">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Morning snack time.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="2" data-chad-option-id="3577" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Sharing pencils.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+        
+            <li data-chad-option="3" data-chad-option-id="3578" class="int-chad-option int-chad-option-winner  odd">
+              
+              <span class="int-chad-option-winner-mark">✔</span>
+              
+              
+              <p class="int-chad-option-title ">Blowing out birthday candles.</p>
+              
+              <p class="int-chad-option-explanation">New guidelines issued by the National Health and Medical Research Council in Australia ban birthday cakes and candle blowing at school. Instead they advise parents to send individual cupcakes for school birthday celebrations.</p>
+              
+          </li>
+        
+            <li data-chad-option="4" data-chad-option-id="3579" class="int-chad-option   even">
+              
+              
+              <p class="int-chad-option-title int-chad-strike">Drinking from water fountains.</p>
+              
+              <p class="int-chad-option-explanation"></p>
+              
+          </li>
+         
+      </ul>
+    </div>
+  </div>
+  
+  <div class="int-chad-question-actions clearfix">
+    
+  </div>
+</div>
+</div><a href="#clear-ballot" class="int-chad-clear-ballot">Redo Quiz</a><div class="int-chad-grade int-chad-prediction-grade clearfix  social-sharing-hidden ">
+  <div class="int-chad-score-stats">
+  <p class="int-chad-your-grade int-chad-prediction-your-grade">Score:<span class="int-chad-prediction-score">5/11</span></p>
+  
+    <div class="int-chad-valign-helper"></div>
+  </div>
+  
+</div>
+</div>
+
+</body></html>
