@@ -4,8 +4,8 @@
 > Thursdays 5:00-7:50pm  
 > Room 436
 
-tl;dr:
-+ This is a fast moving class. Complete your assignments on time, don't plagiarize. 
+This is a fast moving class. Complete your assignments on time, we'll build on them in class. If you're stuck, ask for help early. Don't leave things to the last minute, especially if you've never done them before. 
+
 
 
 | Week     | Date   | In Class                   | Homework Due         |
