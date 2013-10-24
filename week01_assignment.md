@@ -17,4 +17,5 @@ Choose three of the following to play and review:
 + http://www.brooklynmuseum.org/opencollection/play/
 
 ## Get started on texts
-Start writing sample questions based on Ann Marie's podcast
+Start writing sample questions based on Latasha's story:
+<http://www.city-in-demand.com/2013/10/09/ep-1-latashas-story/>
