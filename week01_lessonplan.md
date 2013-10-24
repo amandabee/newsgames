@@ -1,18 +1,19 @@
 Week 2 Lesson Plan
 
 Homework Review:
+
+What did you think of the games:
++ <http://www.redistrictinggame.org/>  
++ <http://marketplace.publicradio.org/features/budget_hero/>  
++ <http://sustainability.publicradio.org/consumerconsequences/>  
++ <http://slaveryfootprint.org/>  
++ <http://www.footprintnetwork.org/>  
++ <http://www.brooklynmuseum.org/opencollection/play/>  
+
 + Pitch discussion (How are pitches coming, what do we think of one another's pitches?)
 
 
 + Play the [Parks Game]]http://www.gothamgazette.com/parksgame/) from Gotham Gazette. Is this a CYOA or a quiz? (Actually, it's a mix: on some questions, there's only one right answer and you can't move on until you get it. On others, it's a sorting-style game.) Screenshots on Baker (Public > Newsgames) 
-
-
-
-
-
-Using Tabletop:
-http://www.mikeball.us/blog/using-google-spreadsheets-and-tabletop-js-as-a-web-application-back-end
-
 
 
 ## Prototypes
@@ -27,9 +28,9 @@ The obvious solution is to draw it yourself.
 + + Public Domain images  
 + + Creative Commons licenses  
 
-http://commons.wikimedia.org/wiki/Main_Page  
-http://www.deviantart.com/ 
-http://www.sxc.hu/
+<http://commons.wikimedia.org/wiki/Main_Page> 
+<http://www.deviantart.com/> 
+<http://www.sxc.hu/>
 Google Image search, Flickr license search
 
 Since 2010, Google does [index vector graphics](http://lifehacker.com/5627391/google-now-indexes-scalable-vector-graphics)
