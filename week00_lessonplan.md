@@ -1,4 +1,4 @@
-Week 0 Lesson Plan
+Week 1 Lesson Plan
 
 Homework Review:
 + Everyone has a digital storage acct?

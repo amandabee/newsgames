@@ -1,4 +1,4 @@
-Week 1 Lesson Plan
+Week 2 Lesson Plan
 
 Homework Review:
 + Pitch discussion
