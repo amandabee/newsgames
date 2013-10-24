@@ -17,3 +17,4 @@ Choose three of the following to play and review:
 + http://www.brooklynmuseum.org/opencollection/play/
 
 ## Get started on texts
+Start writing sample questions based on Ann Marie's podcast
