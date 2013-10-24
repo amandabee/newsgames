@@ -1,3 +1,9 @@
+# Choose Your Own Adventure
+
+Some simple choose your own adventure games in the news: 
++ From Texas Tribune, [an Obamacare game](http://www.texastribune.org/library/data/quiz-health-insurance-options-obamacare/) and another on [Medicaid expansion](http://www.texastribune.org/library/data/interactive-should-texas-expand-medicaid/).
++ A modified [park planning adventure](http://www.gothamgazette.com/parksgame/) from Gotham Gazette. Is this a CYOA or a quiz? (Actually, it's a quiz: there's only one right answer and you can't move on until you get it.)
++ Mother Jon
 
 
 
@@ -18,4 +24,5 @@ http://www.mikeball.us/blog/using-google-spreadsheets-and-tabletop-js-as-a-web-a
 
 
 Here's one flowchart we can play with:
-https://twitter.com/holmesdm/status/393090781038125056/photo/1
+https://twitter.com/holmesdm/status/393090781038125056/photo/1	
+
