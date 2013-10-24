@@ -15,3 +15,6 @@ We're going to play a bit with Tabletop.js -- if you don't know it, [Source has 
 
 And we're going to use a little jQuery. We're actually just going to pull in an external js file for jQuery [we're not going to host it ourselves, though](https://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/)
 
+
+Everyone pick your favorite stat out of Stats and the City and we'll make a boro test:
+http://mycrains.crainsnewyork.com/stats-and-the-city/boroughs
