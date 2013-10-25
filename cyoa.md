@@ -11,6 +11,8 @@ Some simple choose your own adventure games in the news:
 This is a great and grounding post that explains, in part, why we're starting on paper: you need a road map. 
 http://nerds.texastribune.org/post/62939230080/friends-with-benefits-adapting-mojos-cyoa-app
 
+Using Tabletop:
+http://www.mikeball.us/blog/using-google-spreadsheets-and-tabletop-js-as-a-web-application-back-end
 
 Purely text driven CYOA:
 
