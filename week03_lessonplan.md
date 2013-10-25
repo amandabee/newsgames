@@ -16,7 +16,8 @@ Skipped this last week. Need to tackle.
 Mother Jones has a framework, and I've been [hearing good things](http://kotaku.com/5979539/a-beginners-guide-to-making-your-first-video-game) about Twine
 
 ## Make a Slate
-+ Gotham Gazette budget slidrs
++ Gotham Gazette budget sliders
++ [All-time NYC NBA Team](http://www.nytimes.com/interactive/2012/12/24/sports/basketball/pick-your-all-time-new-york-city-nba-team.html?_r=0)
 + [Coalition Builder](http://graphics.wsj.com/koalitionsautomat/) on WSJ
 
 Notes 
