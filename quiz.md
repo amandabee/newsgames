@@ -1,9 +1,11 @@
 # Quizzes
 
-NY Times has a series called "Well Quiz"
-
-From [The Well Quiz](http://well.blogs.nytimes.com/category/the-well-quiz/), 
+NY Times has a series called "Well Quiz" -- From [The Well Quiz](http://well.blogs.nytimes.com/category/the-well-quiz/), 
 [Can You Read People’s Emotions?](http://well.blogs.nytimes.com/2013/10/03/well-quiz-the-mind-behind-the-eyes/) and [Well Flu](http://well.blogs.nytimes.com/2013/02/13/the-well-flu-quiz/)
+
+[Popes](http://www.nytimes.com/interactive/2013/03/18/world/pope-quotes.html) 
+
+[Presidential Fibs](http://ralphvacca.org/fibber/game/index.html)
 
 From Craft II on [Bloomberg's Legacy](http://bloomberglegacy.nycitynewsservice.com/bloombergs-new-york-city-take-the-quiz/)
 
