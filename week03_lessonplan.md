@@ -2,6 +2,8 @@
 
 [Sisi's Source post](http://source.opennews.org/en-US/learning/creating-games-journalism/) and a [running round up of games](http://www.bayreporta.com/newsgame-directory/) that she cited.
 
+## Finding Graphics
+Skipped this last week. Need to tackle. 
 
 ## Video Games
 [Kotaku Beginners Guide](http://kotaku.com/5979539/a-beginners-guide-to-making-your-first-video-game) 
