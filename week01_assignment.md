@@ -15,7 +15,12 @@ Choose three of the following to play and review:
 + http://slaveryfootprint.org/
 + http://www.footprintnetwork.org/
 + http://www.brooklynmuseum.org/opencollection/play/
++ http://www.icij.org/offshore/interactive-stash-your-cash
 
 ## Get started on texts
-Start writing sample questions based on Latasha's story:
-<http://www.city-in-demand.com/2013/10/09/ep-1-latashas-story/>
+
+If you haven't already come up with a story, listen to Latashs's story on [City in Demand](http://www.city-in-demand.com)  and write 8 questions, each with at least two answers that gets at the key takeaway: Shelter residents move around all the time; there's a lot of paperwork: all those safety nets take proof. 
+
+If you have a story that you're already focused on, you can write your questions and answers about that story. Start by identifying the key takeaway of your "quiz."
+
+
