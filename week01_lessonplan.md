@@ -1,47 +1,50 @@
-Week 2 Lesson Plan
+Week 1 Lesson Plan
 
 Homework Review:
-
-What did you think of the games:
-+ <http://www.redistrictinggame.org/>  
-+ <http://marketplace.publicradio.org/features/budget_hero/>  
-+ <http://sustainability.publicradio.org/consumerconsequences/>  
-+ <http://slaveryfootprint.org/>  
-+ <http://www.footprintnetwork.org/>  
-+ <http://www.brooklynmuseum.org/opencollection/play/>  
-
-+ Pitch discussion (How are pitches coming, what do we think of one another's pitches?)
++ Everyone has a digital storage acct?
++ Games and why they work/don't work
++ Stories you're thinking about (whiteboard them)
 
 
-+ Play the [Parks Game](http://www.gothamgazette.com/parksgame/) from Gotham Gazette. Is this a CYOA or a quiz? (Actually, it's a mix: on some questions, there's only one right answer and you can't move on until you get it. On others, it's a sorting-style game.) Screenshots on Baker (Public > Newsgames) 
+
+## What makes games work?
++ Quizzes as storytelling (not punishment)
 
 
-## Prototypes
-Why am I torturing you with paper prototypes? [Because they're important](http://nerds.texastribune.org/post/62939230080/friends-with-benefits-adapting-mojos-cyoa-app).  
-+ Play through prototypes; take notes on game play.  
-+ Start to lay out how your game texts need to be structured; where you need graphics  
+### Bingo
++ Make a bingo game together. 
+    1 Change "YOUR TITLE GOES HERE" to your title.
+    2 Change "http://www.mysite.url" to your URL
+    3 Change "header_logo_black.png" to your logo
+    4 Tweak the color.
+    
+Ideally, we'd actually use Git to fork and clone WNYC's Bingo repository, but we're trying to do things in bite sized pieces.
 
-## Graphics
-The obvious solution is to draw it yourself. 
+FTP -- we're going to ...
++ Make a "newsgames" directory on digital storage
++ Upload our bingo games to it
++ Find the URL and play online.
 
-+ Images and where to find royalty free graphics. 
-+ + Public Domain images  
-+ + Creative Commons licenses  
+### Play 
++ [Newt or Schrute: the Quiz](http://bit.ly/wmypt7)
++ [Urbanology](http://www.bmwguggenheimlab.org/urbanologyonline) ([photos]:(http://www.flickr.com/photos/acnatta/6283903285/))
 
-<http://commons.wikimedia.org/wiki/Main_Page>  
-<http://www.deviantart.com/> 
-<http://www.sxc.hu/>
-Google Image search, Flickr license search
+### Disucss
++ Viral strategies (ie. at the end of BINGO)
++ Structure
 
-Since 2010, Google does [index vector graphics](http://lifehacker.com/5627391/google-now-indexes-scalable-vector-graphics)
-
-Nice roundup: 
-http://www.makeuseof.com/tag/10-best-websites-free-vector-art-downloads/
-
-
-## Play
-+ Play through choose your own adventure games
+Basic Skills
 
 
-# Homework
-+ Organize your work; start writing and identifying TKs. 
++ FTP -- uploa
+
++ Trello for planning; Visio, Omnigraffle, Whiteboards
+
++ Burndown Charts
+
++ Paper prototyping
+
+
+
+Homework:
++ Prototype one game on paper. Use index cards and marking pens to organize your ideas. 
