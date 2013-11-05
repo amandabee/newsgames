@@ -10,10 +10,15 @@ We should have some rough drafts in place.
 Flixel? https://github.com/emmett9001/fist-of-the-north-carp/tree/master/src and http://emmettbutler.com/games/fishing.html
 
 
+
+
 ## Make a Slate
 + Gotham Gazette budget sliders
 + [All-time NYC NBA Team](http://www.nytimes.com/interactive/2012/12/24/sports/basketball/pick-your-all-time-new-york-city-nba-team.html?_r=0)
 + [Coalition Builder](http://graphics.wsj.com/koalitionsautomat/) on WSJ
++ 
+
+Possible tool: [Drag and Drop Sorting](http://www.script-tutorials.com/html5-drag-and-drop-sorting-photos/)
 
 ## HTML 5 
 [HTML 5](http://oreillynet.com/pub/e/2632?imm_mid=0a2782&cmp=em-npa-webcasts-pr-march4)
