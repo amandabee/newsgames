@@ -14,6 +14,14 @@ We should have some rough drafts in place.
 + [Coalition Builder](http://graphics.wsj.com/koalitionsautomat/) on WSJ
 Possible tool: [Drag and Drop Sorting](http://www.script-tutorials.com/html5-drag-and-drop-sorting-photos/)
 
+
+## Keeping Score
+
+http://www.gimcrackd.com/etc/doc/#code,variables
+
+
+
+
 ## HTML 5 
 [HTML 5](http://oreillynet.com/pub/e/2632?imm_mid=0a2782&cmp=em-npa-webcasts-pr-march4)
 
