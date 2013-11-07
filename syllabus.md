@@ -45,6 +45,9 @@ Here are a few great examples of games and quizzes as a storytelling mechanism:
 + Newt or Schrute: the Quiz [link: http://bit.ly/wmypt7]
 
 
+## Software Requirements
+You will need an FTP Client and a Text editor. If you don't already have one that you like, I recommend FileZilla and Text Wrangler, respectively). Twine.
+
 ## Instructor
 Amanda Hickman managed development of a series of games about public policy issues as Gotham Gazette's director of technology. She has spent more than a decade working at the intersection of journalism and civic engagement, reporting on local and international events. 
 
